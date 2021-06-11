@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --Dar-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: var(--Dar-cyan);
+}
+
+body ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 50%;
+  min-height: 55%;
+  background: var(--Dar-cyan) url(../images/bg-pattern-top.svg) no-repeat;
+  z-index: -1;
+}
+
+body ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 50%;
+  min-height: 60%;
+  background: var(--Dar-cyan) url(../images/bg-pattern-bottom.svg) no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1;
+}
+
+main {
+  width: 30%;
+  min-height: 50%;
+  background-color: white;
+  color: var(--Very-dark-desaturated-blue);
+  overflow: hidden;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container_1 {
+  width: 100%;
+  height: 20vh;
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  background-size: cover;
+}
+
+.img {
+  position: absolute;
+  border: 5px solid white;
+  border-radius: 5rem;
+  top: 35%;
+}
+
+.container_2 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  padding-top: 2.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.container_2 h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.container_2 span {
+  margin-left: 0.5rem;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+
+.container_2 p {
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--Dark-grayish-blue);
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.container_3 {
+  height: 5.5rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_3 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+}
+
+.container_3 li h2 {
+  font-size: 18px;
+  margin-bottom: .5rem;
+}
+
+.container_3 li p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: .1rem;
+}
+
+@media (max-width: 991px) {
+  body ::after {
+    min-height: 70%;
+    min-width: 50%;
+  }
+  body ::before {
+    min-width: 50%;
+    min-height: 70%;
+  }
+  main {
+    min-width: 85%;
+  }
+  .container_3 li {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
